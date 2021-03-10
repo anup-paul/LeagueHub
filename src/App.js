@@ -14,7 +14,7 @@ import LeagueDetails from './Components/LeagueDetails/LeagueDetails';
 function App() {
   return (
     <Router>
-      {/* <Header/> */}
+      <Header/>
       <Switch>
         <Route path="/home">
             <Home/> 
