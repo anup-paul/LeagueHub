@@ -18,7 +18,7 @@ const League = (props) => {
         fetch(url)
         .then(res => res.json())
         .then(data => setDetails(data.leagues))
-    }, [details])
+    }, [idLeague])
     return (
         
             <div className="col-md-4 text-center" >
