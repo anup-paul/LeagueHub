@@ -6,7 +6,8 @@ import { useState } from 'react/cjs/react.development';
 
 const League = (props) => {
     const { strLeagueAlternate, strLeague, idLeague } = props.league;
-    const [details, setDetails] = useState([])
+    const [details, setDetails] = useState({});
+    // console.log(details);
     const history = useHistory()
     const handleClick = (id) => {
         history.push(`/league/${id}`)
