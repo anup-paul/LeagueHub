@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
 import { useHistory } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react/cjs/react.development';
+// import { useState } from 'react/cjs/react.development';
 
 const League = (props) => {
     const { strLeagueAlternate, strLeague, idLeague } = props.league;
