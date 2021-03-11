@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import femaleImage from '../../Photo/female.png';
 import maleImage from '../../Photo/male.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock, faCrosshairs, faFutbol, faGlobe, faMars } from '@fortawesome/free-solid-svg-icons'
 import facebook from '../../Photo/Facebook-logo.png';
 import youTube from '../../Photo/images.png';
 import twitter from '../../Photo/twitter_circle-512.png';
@@ -27,18 +29,18 @@ const LeagueDetails = () => {
                 <div className="d-flex align-items-center justify-content-between bg-primary card-design">
                     <div class="card-body">
                         <h2>{leagueDetails.strLeague}</h2>
-                        <h6>FoundedYear: {leagueDetails.intFormedYear}</h6>
-                        <h6>DateFirstEvent: {leagueDetails.dateFirstEvent}</h6>
-                        <h6>Country: {leagueDetails.strCountry}</h6>
-                        <h6>Sport type: {leagueDetails.strSport}</h6>
-                        <h6 >Gender: {leagueDetails.strGender}</h6>
+                        <h6><FontAwesomeIcon icon={faCrosshairs}/>  FoundedYear: {leagueDetails.intFormedYear}</h6>
+                        <h6><FontAwesomeIcon icon={faClock}/>  DateFirstEvent: {leagueDetails.dateFirstEvent}</h6>
+                        <h6><FontAwesomeIcon icon={faGlobe}/>  Country: {leagueDetails.strCountry}</h6>
+                        <h6><FontAwesomeIcon icon={faFutbol}/>  Sport type: {leagueDetails.strSport}</h6>
+                        <h6><FontAwesomeIcon icon={faMars}/>  Gender: {leagueDetails.strGender}</h6>
                     </div>
                     <div className=" image-size">
-                        {
+                       { leagueDetails.strGender && (
                             leagueDetails.strGender === 'Male'
                                 ? <img src={maleImage} alt="" />
                                 : <img src={femaleImage} alt="" />
-                        }
+                       )}
                     </div>
                 </div>
 
