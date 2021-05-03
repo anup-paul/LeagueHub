@@ -1,6 +1,19 @@
 .bannerDesign
 {
-    text-align: center;
-    height: 200px;
+    position: relative;
+    background: url('../../Photo/banner.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;  
+    z-index: 1;
+}
+.bannerDesign::before{
+    position: absolute;
+    content: "";
+    top:0;
     width: 100%;
+    height: 100%;
+    background: #0a192f;
+    opacity: .7;
+    z-index: -1;
 }
