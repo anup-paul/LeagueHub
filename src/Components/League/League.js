@@ -22,9 +22,9 @@ const League = (props) => {
     return (
         
             <div className="col-md-4 text-center" >
-                <div className="card cardDesign" style={{ width: "18rem", height: "300px", marginBottom: "30px",marginTop:"30px",backgroundColor:"steelblue" }}>
+                <div className="card cardDesign p-3" style={{ width: "18rem", height: "350px", marginBottom: "30px",marginTop:"30px",backgroundColor:"steelblue" }}>
                    {
-                       details.map(details => <img src={details.strLogo}alt=""/>)
+                       details.map(details => <img  src={details.strLogo}alt=""/>)
                    }
                     
                     <div className="card-body ">
@@ -32,9 +32,9 @@ const League = (props) => {
                         <h6 className="card-subtitle mb-2 text-dark">{strLeague}</h6>
                         <br/>
                         <br/>
-                        <button className="btn btn-warning" onClick={() => handleClick(idLeague)} >
-                            Explore
-                            <FontAwesomeIcon icon = {faArrowRight}/>    
+                        <button className="btn btn-warning " onClick={() => handleClick(idLeague)} >
+                            Explore  <FontAwesomeIcon icon = {faArrowRight}/>    
+                            
                         </button>
                     </div>
                 </div>

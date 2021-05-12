@@ -4,7 +4,7 @@
     background: url('../../Photo/banner.jpg') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 40vh;  
+    height: 50vh;  
     z-index: 1;
 }
 .bannerDesign::before{

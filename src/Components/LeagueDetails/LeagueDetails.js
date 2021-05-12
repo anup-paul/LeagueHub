@@ -21,9 +21,9 @@ const LeagueDetails = () => {
     }, [id])
     return (
         <div className="backgroundDesign">
-            <body background={banner} className="bannerDesign">
-                <img src={leagueDetails.strLogo} alt="" />
-            </body>
+            <div className="bannerDesign d-flex justify-content-center">
+                <img  src={leagueDetails.strLogo} alt="" />
+            </div>
 
             <div className="details-container text-white ">
                 <div className="d-flex align-items-center justify-content-between bg-primary card-design">

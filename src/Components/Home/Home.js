@@ -12,7 +12,7 @@ const Home = () => {
     }, [])
 
     return (
-        <div className="bg-dark">
+        <div style={{backgroundColor:"#0a192f"}}>
             <Banner></Banner>
             <div className=" container mt-5">
                 <div className="  row">
